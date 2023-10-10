@@ -13,7 +13,7 @@ function EventItem({ event }) {
     // convert address
     const formattedAddress = event.location.replace(', ', '\n')
     // define the explore link
-    const exploreLink = `/event/${event.id}`;
+    const exploreLink = `/events/${event.id}`;
     // ui
     return (
         <li className={classes.item}>
