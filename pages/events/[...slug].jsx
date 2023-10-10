@@ -1,5 +1,6 @@
 import { useRouter } from "next/router"
 import { getFilteredEvents } from "../../dummy-data";
+import EventsList from "../../components/events/event-list";
 
 function FilteredEventsPage() {
     // extract data from url
@@ -28,7 +29,7 @@ function FilteredEventsPage() {
     // ui
     return (
         <div>
-            <h1>filtered events</h1>
+            <EventsList items={filteredEvents} />
         </div>
     )
 }
