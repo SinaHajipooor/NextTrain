@@ -1,5 +1,6 @@
 import Link from "next/link"
 import classes from './event-item.module.css'
+import Button from "../ui/button";
 
 
 function EventItem({ event }) {
@@ -29,7 +30,7 @@ function EventItem({ event }) {
                     </div>
                 </div>
                 <div className={classes.actions}>
-                    <Link href={exploreLink}>Explore Event </Link>
+                    <Button link={exploreLink}>Explore event</Button>
                 </div>
             </div>
         </li>
