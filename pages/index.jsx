@@ -1,4 +1,8 @@
+import { getFeaturedEvents } from "../dummy-data"
+
 function HomePage() {
+    // get all events
+    const featuredEvents = getFeaturedEvents();
 
     return (
         <div>
