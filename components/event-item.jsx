@@ -1,7 +1,8 @@
 import Link from "next/link"
+import classes from './event-item.module.css'
+
 
 function EventItem({ event }) {
-
     // convert date 
     const readableDate = new Date(event.date).toLocaleDateString('fa-IR', {
         day: 'numeric',
@@ -14,7 +15,7 @@ function EventItem({ event }) {
     const exploreLink = `/event/${event.id}`;
     // ui
     return (
-        <li>
+        <li className={classes.item}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={'/' + event.image} alt={event.title} />
             <div>
