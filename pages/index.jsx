@@ -1,5 +1,5 @@
 import Link from "next/link";
-import axiosConfig from "../utils/axios"
+import { apiFetchAllActivityHistories } from "../api/apiActivityHistory";
 
 function HomePage(props) {
     return (
@@ -13,9 +13,7 @@ export default HomePage
 
 
 export async function getStaticProps() {
-    console.log('regenerated')
-    const response = await axiosConfig.get('/api/profile/activity-history?user_id=1');
-    const data = response.data.result.data;
+    const data = await apiFetchAllActivityHistories()
     let isAnyData = data.length === 0;
 
     return {
@@ -24,9 +22,6 @@ export async function getStaticProps() {
         },
         revalidate: 10, // this is the time (in seconds ) that next.js should wait until it re-generate this page 
         notFound: isAnyData,
-        // redirect : {
-        //     destination : 'some-route'
-        // }
     }
 
 }
