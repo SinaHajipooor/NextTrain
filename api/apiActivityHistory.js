@@ -7,7 +7,6 @@ export async function apiShowActivityHistory(id) {
 
         return data;
     } catch (error) {
-        console.log(error.message)
         throw new Error(error.message)
     }
 }

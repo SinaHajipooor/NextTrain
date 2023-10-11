@@ -2,9 +2,7 @@ import { apiShowActivityHistory } from "../api/apiActivityHistory";
 
 function ActivityDetail({ activityHistory }) {
 
-
     if (!activityHistory) return <p>is loading ...</p>
-
 
     return (
         <div>
@@ -14,9 +12,7 @@ function ActivityDetail({ activityHistory }) {
     )
 };
 
-
 export default ActivityDetail
-
 
 // ----------- approach 1 ----------------
 
@@ -51,7 +47,9 @@ export default ActivityDetail
 // }
 
 // ----------- approach 2 ----------------
+
 export async function getServerSideProps(context) {
+
     const { params } = context;
     const activityId = params.aid;
 
@@ -60,7 +58,7 @@ export async function getServerSideProps(context) {
     return {
         props: {
             activityHistory: data
-        }
+        },
     }
 }
 
