@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { apiShowActivityHistory } from "../api/apiActivityHistory";
 import axiosConfig from "../utils/axios";
 
@@ -7,6 +8,11 @@ function ActivityDetail({ activityHistory }) {
 
     return (
         <div>
+            <Head>
+                <title>
+                    Activity detail
+                </title>
+            </Head>
             <h1>{activityHistory.title}</h1>
             <h2>{activityHistory.address}</h2>
         </div>
