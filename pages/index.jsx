@@ -1,9 +1,15 @@
 import Link from "next/link";
+import Head from "next/head";
+
+
 import { apiFetchAllActivityHistories } from "../api/apiActivityHistory";
 
 function HomePage(props) {
     return (
         <div style={{ marginLeft: '50px', marginTop: '50px' }}>
+            <Head>
+                <title>dashboard</title>
+            </Head>
             {props.activityHistories.map(activity => <li key={activity.id}><Link href={`/${activity.id}`} >{activity.title}</Link> </li>)}
         </div>
     )
