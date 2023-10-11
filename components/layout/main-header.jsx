@@ -11,7 +11,13 @@ function MainHeader() {
             <nav className={styles.navigation}>
                 <ul>
                     <li>
-                        <Link href='/events'>Browse All Events</Link>
+                        <Link href='/client'>CSR</Link>
+                    </li>
+                    <li>
+                        <Link href='/server'>SSR</Link>
+                    </li>
+                    <li>
+                        <Link href='/'>SSG</Link>
                     </li>
                 </ul>
             </nav>
