@@ -22,7 +22,7 @@ function Test() {
     return (
         <div style={{ marginLeft: '50px', marginTop: '50px' }}>
             <Head>
-                <title>client</title>
+                <title>CSR</title>
             </Head>
             {activities.map(activity => <li key={activity.id}><Link href={`/${activity.id}`} >{activity.title}</Link> </li>)}
         </div>
