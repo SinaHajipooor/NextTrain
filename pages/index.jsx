@@ -26,7 +26,7 @@ export async function getStaticProps() {
         props: {
             activityHistories: data
         },
-        revalidate: 1, // agar requeste jadidi biyayad va az re-gerate shodane qabli bishtr az 10 saniye gozashte bashad , dobare page generate mishavad
+        revalidate: 1, // agar requeste jadidi biyayad va az re-generate shodane qabli bishtr az 10 saniye gozashte bashad , dobare page generate mishavad
         notFound: isAnyData,
     }
 
