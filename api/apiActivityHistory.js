@@ -7,7 +7,7 @@ export async function apiShowActivityHistory(id) {
 
         return data;
     } catch (error) {
-        throw new Error(error.message)
+        // throw new Error(error.message)
     }
 }
 
@@ -19,6 +19,6 @@ export async function apiFetchAllActivityHistories() {
 
         return data;
     } catch (error) {
-        throw new Error(error.message)
+        // throw new Error(error.message)
     }
 }
