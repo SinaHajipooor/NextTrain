@@ -21,4 +21,4 @@ export async function apiFetchAllActivityHistories() {
     } catch (error) {
         throw new Error(error.message)
     }
-}
+}    
