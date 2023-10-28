@@ -14,6 +14,7 @@ function HomePage() {
 export default HomePage
 
 
+
 // export async function getStaticProps() {
 //     const data = await apiFetchAllActivityHistories()
 //     let isAnyData = data.length === 0;
@@ -26,4 +27,4 @@ export default HomePage
 //         notFound: isAnyData,
 //     }
 
-// }
+// } 
