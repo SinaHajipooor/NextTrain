@@ -1,11 +1,6 @@
-import Link from "next/link";
-import Head from "next/head";
-
-
-import { apiFetchAllActivityHistories } from "../api/apiActivityHistory";
 import Banner from "../components/banner";
 
-function HomePage(props) {
+function HomePage() {
     return (
         <div style={{ marginLeft: '50px', marginTop: '50px' }}>
 
@@ -18,16 +13,16 @@ function HomePage(props) {
 export default HomePage
 
 
-export async function getStaticProps() {
-    const data = await apiFetchAllActivityHistories()
-    let isAnyData = data.length === 0;
+// export async function getStaticProps() {
+//     const data = await apiFetchAllActivityHistories()
+//     let isAnyData = data.length === 0;
 
-    return {
-        props: {
-            activityHistories: data
-        },
-        revalidate: 10, // agar requeste jadidi biyayad va az re-generate shodane qabli bishtr az 10 saniye gozashte bashad , dobare page generate mishavad
-        notFound: isAnyData,
-    }
+//     return {
+//         props: {
+//             activityHistories: data
+//         },
+//         revalidate: 10, // agar requeste jadidi biyayad va az re-generate shodane qabli bishtr az 10 saniye gozashte bashad , dobare page generate mishavad
+//         notFound: isAnyData,
+//     }
 
-}
+// }
