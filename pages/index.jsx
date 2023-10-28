@@ -2,7 +2,7 @@ import Banner from "../components/banner";
 
 function HomePage() {
     return (
-        <div style={{ marginLeft: '50px', marginTop: '50px' }}>
+        <div style={{ margin: '20px' }}>
 
             <Banner title='Hi baby ' subTitle='when the fuck should i really even start ?' imageUrl='/static/test.jpg' />
 
