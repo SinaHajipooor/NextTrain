@@ -5,7 +5,6 @@ function HomePage() {
     return (
         <div >
             <Layout>
-
                 <Banner title='Hi baby ' subTitle='when the fuck should i really even start ?' imageUrl='/static/test.jpg' />
             </Layout>
         </div>
