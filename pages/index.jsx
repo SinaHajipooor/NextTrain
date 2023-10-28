@@ -3,14 +3,14 @@ import Head from "next/head";
 
 
 import { apiFetchAllActivityHistories } from "../api/apiActivityHistory";
+import Banner from "../components/banner";
 
 function HomePage(props) {
     return (
         <div style={{ marginLeft: '50px', marginTop: '50px' }}>
-            <Head>
-                <title>SSG</title>
-            </Head>
-            {props.activityHistories.map(activity => <li key={activity.id}><Link href={`/${activity.id}`} >{activity.title}</Link> </li>)}
+
+            <Banner title='Hi baby ' subTitle='when the fuck should i really even start ?' imageUrl='/static/test.jpg' />
+
         </div>
     )
 }
