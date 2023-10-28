@@ -1,4 +1,4 @@
-import Banner from "../components/banner";
+import Banner from "../components/home/banner";
 import Layout from "../components/layout/layout";
 
 function HomePage() {
