@@ -6,19 +6,13 @@ function MainHeader() {
     return (
         <header className={styles.header}>
             <div className={styles.logo}>
-                <Link href='/'>NextEvents</Link>
+                <Link href='/'>Netflix</Link>
             </div>
             <nav className={styles.navigation}>
                 <ul>
-                    <li>
-                        <Link href='/client'>CSR</Link>
-                    </li>
-                    <li>
-                        <Link href='/server'>SSR</Link>
-                    </li>
-                    <li>
-                        <Link href='/'>SSG</Link>
-                    </li>
+                    <li>Home</li>
+                    <li>My List</li>
+                    <li>Signout</li>
                 </ul>
             </nav>
         </header>

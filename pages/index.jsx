@@ -1,11 +1,13 @@
 import Banner from "../components/banner";
+import Layout from "../components/layout/layout";
 
 function HomePage() {
     return (
         <div >
+            <Layout>
 
-            <Banner title='Hi baby ' subTitle='when the fuck should i really even start ?' imageUrl='/static/test.jpg' />
-
+                <Banner title='Hi baby ' subTitle='when the fuck should i really even start ?' imageUrl='/static/test.jpg' />
+            </Layout>
         </div>
     )
 }
