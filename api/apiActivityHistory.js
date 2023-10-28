@@ -11,7 +11,6 @@ export async function apiShowActivityHistory(id) {
     }
 }
 
-
 export async function apiFetchAllActivityHistories() {
     try {
         const response = await axiosConfig.get(`/api/profile/activity-history?user_id=1`);
