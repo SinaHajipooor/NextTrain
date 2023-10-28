@@ -29,7 +29,7 @@ export default ActivityDetail
 
 //     const data = await apiShowActivityHistory(activityId)
 //     return {
-//         props: {
+//         props: { 
 //             activityHistory: data
 //         }
 //     }
